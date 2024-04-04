@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1 = {
+            name:"Tien",
+            age:18,
+            city:"Ha Noi"
+        }
+        let obj2 = {
+            name:"Hiep",
+            age:10,
+            nation:"USA"
+        }
+        let obj3 = {
+            name:"Hieu",
+            age:20,
+        }
+        function arr(...numbers){
+            return numbers.reduce((accumlator,obj)=>{
+                return {...accumlator,...obj}
+            },{})
+        }
+        let result = arr(obj1,obj2,obj3);
+        console.log(result); 
+    </script>
+</body>
+</html>

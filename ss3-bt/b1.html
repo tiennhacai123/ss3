@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i = 0; i<6;i++){
+            console.log(i);
+        }
+        console.log(i);
+        //i ở bên ngoài vòng lặp sẽ bị underfined bởi vì chúng ta chỉ khai bao i ở trong vòng lặp, do let có phạm vị là block scope, nó chỉ hoạt động ở trong vòng lặp in ra i
+    </script>
+</body>
+</html>

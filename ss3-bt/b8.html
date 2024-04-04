@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [1,2,3,7,8]
+        let arr2 = [4,5,6]
+        let index1 = 3;
+        let arr3 = ['a','b','e','f']
+        let arr4 = ['c','d'];
+        let index2 = 2;
+        function insert(arr1,arr2,index){
+            arr1.splice(index,0,...arr2);           
+            console.log(arr1);
+             return arr1;
+        }
+        insert(arr1,arr2,index1)
+        insert(arr3,arr4,index2)
+    </script>
+</body>
+</html>
